@@ -81,10 +81,11 @@
       }
     },
     "com.unity.uiwidgets": {
-      "version": "file:C:/Projects/_Downloads/com.unity.uiwidgets-master/com.unity.uiwidgets",
+      "version": "1.5.4-preview.12",
       "depth": 0,
-      "source": "local",
-      "dependencies": {}
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
