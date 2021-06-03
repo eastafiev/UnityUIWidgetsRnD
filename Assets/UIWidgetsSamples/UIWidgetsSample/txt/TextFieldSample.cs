@@ -1,14 +1,22 @@
 using Unity.UIWidgets.material;
 using Unity.UIWidgets.painting;
+using Unity.UIWidgets.service;
 using Unity.UIWidgets.ui;
 using Unity.UIWidgets.widgets;
+using UIWidgetsGallery.gallery;
 using UnityEngine;
+using Color = Unity.UIWidgets.ui.Color;
 using DialogUtils = Unity.UIWidgets.material.DialogUtils;
 
 namespace UIWidgetsSample {
     public class TextFieldSample : UIWidgetsSamplePanel {
-        protected override Widget createWidget() {
+     
+        protected override Widget createWidget()
+        {
+                
             return new MaterialApp(
+                theme: new ThemeData(
+                    primaryColor: Color.black),
                 title: "Text Fields",
                 home: new MyCustomForm()
             );
@@ -28,6 +36,7 @@ namespace UIWidgetsSample {
 
     class _MyCustomFormState : State<MyCustomForm> {
         readonly TextEditingController myController = new TextEditingController();
+        
 
         public override void dispose() {
             this.myController.dispose();

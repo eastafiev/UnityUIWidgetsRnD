@@ -12,6 +12,7 @@ namespace UIWidgetsSample {
                         settings: settings,
                         pageBuilder: (BuildContext context, Animation<float> animation,
                             Animation<float> secondaryAnimation) => builder(context)
+
                     );
             }
         }
